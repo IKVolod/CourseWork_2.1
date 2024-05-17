@@ -16,4 +16,9 @@ internal class Dice
         get { return _isUsed; }
         set { _isUsed = value; }
     }
+
+    public override string ToString()
+    {
+        return _number.ToString();
+    }
 }
