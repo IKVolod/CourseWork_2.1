@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -12,6 +13,7 @@ internal class Program
 {
     static void Main()
     {
+        Console.OutputEncoding = Encoding.UTF8;
         //Створення об'єкту гравців
         Players players = new Players();
 
