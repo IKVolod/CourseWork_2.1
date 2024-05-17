@@ -55,7 +55,7 @@ internal class Program
                         break;
                     }
 
-                    if (dices.RerollCount == 2 && dices.Sum.Last() == 0 && dices[0].Number == dices[1].Number)
+                    if (dices.RerollCount == 2 && dices.Length == 2 && dices.Sum.Last() == 0 && dices[0].Number == dices[1].Number)
                     {
                         dices.RerollCount = 0;
                         Console.WriteLine("Вам випала щаслива пара {0}{0}\n", dices[0].Number +
